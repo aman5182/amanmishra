@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
