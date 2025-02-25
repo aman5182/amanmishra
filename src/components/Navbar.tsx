@@ -5,8 +5,8 @@ const Navbar = () => {
   const links = [
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" }
+    { name: "Services", href: "#services" },
+    { name: "Projects", href: "#projects" }
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -39,8 +39,8 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <Button variant="secondary" onClick={() => window.open('path-to-your-resume.pdf', '_blank')}>
-            Resume
+          <Button variant="secondary" onClick={() => window.location.href = 'mailto:amanmishra5182@gmail.com?subject=Resume%20Request'}>
+            Request Resume
           </Button>
         </div>
       </div>

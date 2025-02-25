@@ -2,8 +2,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Testimonials from "@/components/Testimonials";
-import Download from "@/components/Download";
+import Services from "@/components/Services";
+import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,8 +12,8 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Features />
-      <Testimonials />
-      <Download />
+      <Services />
+      <Projects />
       <Footer />
     </div>
   );
