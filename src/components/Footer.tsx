@@ -31,7 +31,7 @@ const Footer = () => {
             </Button>
           </div>
           <p className="text-white/60">
-            © 2024. All rights reserved.
+            © 2025. All rights reserved.
           </p>
         </div>
       </div>
