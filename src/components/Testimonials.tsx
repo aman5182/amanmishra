@@ -1,22 +1,23 @@
+
 import { Card } from "@/components/ui/card";
-import { MessageSquare } from "lucide-react";
+import { Code } from "lucide-react";
 
 const Testimonials = () => {
-  const testimonials = [
+  const projects = [
     {
-      quote: "The best banking experience I've ever had. Simple, fast, and secure.",
-      author: "Sarah Johnson",
-      role: "Business Owner"
+      title: "E-Commerce Platform",
+      description: "A full-stack e-commerce solution built with React and Node.js",
+      tech: "React, Node.js, MongoDB"
     },
     {
-      quote: "This app has completely transformed how I manage my finances.",
-      author: "Michael Chen",
-      role: "Software Engineer"
+      title: "Task Management App",
+      description: "Real-time task management application with collaborative features",
+      tech: "TypeScript, Socket.io, Express"
     },
     {
-      quote: "Incredible user experience. Everything just works seamlessly.",
-      author: "Emma Davis",
-      role: "Financial Analyst"
+      title: "Portfolio Generator",
+      description: "Dynamic portfolio generator for developers with customizable themes",
+      tech: "Next.js, Tailwind CSS, Supabase"
     }
   ];
 
@@ -25,20 +26,20 @@ const Testimonials = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl font-bold text-white text-center mb-4">
-          What Our Users Say
+          Featured Projects
         </h2>
         <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
-          Join thousands of satisfied users who have transformed their banking experience
+          A selection of my recent work and personal projects
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {projects.map((project, index) => (
             <Card key={index} className="p-6 hover-lift glass-effect">
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                <MessageSquare className="w-6 h-6 text-white" />
+                <Code className="w-6 h-6 text-white" />
               </div>
-              <p className="text-white/80 mb-4 italic">{testimonial.quote}</p>
-              <div className="text-white font-semibold">{testimonial.author}</div>
-              <div className="text-white/60 text-sm">{testimonial.role}</div>
+              <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
+              <p className="text-white/80 mb-4">{project.description}</p>
+              <div className="text-white/60 text-sm">{project.tech}</div>
             </Card>
           ))}
         </div>
